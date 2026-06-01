@@ -77,7 +77,7 @@ bool ProcessParkingEvent()
   {
     Serial.print("Vehicle '");
     Serial.print(LastVehicle);
-    Serial.println("' removed from the parking lot. Price: $" + String(price, 2));
+    Serial.println("' removed from the parking lot. Price: €" + String(price, 2));
   }
   return true;
 }
