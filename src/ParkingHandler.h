@@ -8,7 +8,6 @@ class ParkingHandler
         ParkingHandlerSettings _Settings;
         Vehicle* _Array;
         size_t _Lenght;
-        unsigned long _LastResizeTime;
 
         float _CalculatePrice(unsigned long arrivalTime)
         {
