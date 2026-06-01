@@ -66,7 +66,6 @@ class ParkingHandler
         : _Settings(settings)
         {
             _Lenght = 0;
-            _LastResizeTime = 0;
             _Array = new Vehicle[_Settings.MaxVehicles];
             
             // Fill the array with empty vehicles
