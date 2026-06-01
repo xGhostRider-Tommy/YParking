@@ -8,8 +8,8 @@ Written in **C++ (Arduino)** using the **Platform IO** extension in **VS Code**.
 
 ## Requirements
 ### Software
-- **Visual Studio**
-- The following VS Code **Extensions**: **C/C++ Extension Pack** and **PlatformIO**
+- **Visual Studio Code**
+- The following VS Code **Extensions**: [C/C++ (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) and [PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 ### Hardware
 - An **Arduino UNO** board
 - An **External Power supply** board for Arduino with at least **one 5V and GND**
@@ -41,9 +41,18 @@ Written in **C++ (Arduino)** using the **Platform IO** extension in **VS Code**.
 | Anode (long leg)    | D11        |
 | Cathode (short leg) | GND        |
 
+## QR Code Scanner Configuration
+- **Connect** the board
+- Make sure the scanner is properly **connected**. You should hear a **sound**, see a **red indicator** light, and notice a brief **flash of light**.
+- **Scan** the QR Codes in the [Tutorial File](./TutorialResetQRCodeScanner.pdf) and make sure you hear a **sound** after every scan.
+
+## Testing
+To test that everything works you can enable the **testing code** by setting the `TESTING` constant in [main.cpp](./src/main.cpp) to `true`. You can find this constant near the top of the file.
+The LED lights should start **blinking**, the Servo Motor should **open and close** and the QR Code scanner should **print every character** it reads.
+
 ## Running
 - **Compile** and **upload** the program to **Arduino**
 - Enable the **Serial Monitor**
 
 
-**NOTE**: As long as I know, this project CANNOT be run via the official *Arduino* software as this project uses more than one file for the project
+**NOTE**: To my knowledge, this project cannot be run using the official *Arduino* IDE, as it uses multiple source files.
